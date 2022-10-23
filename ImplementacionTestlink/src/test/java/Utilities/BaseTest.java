@@ -10,13 +10,16 @@ import java.net.URL;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
-
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 
@@ -26,6 +29,7 @@ public class BaseTest {
 	String Node = "http://localhost:4444";
 	public ChromeOptions op;
 	public FirefoxOptions fo;
+	String OpeNewTab = Keys.chord(Keys.CONTROL, Keys.RETURN);
 
 	public WebDriver getDriver() {
 
@@ -33,7 +37,7 @@ public class BaseTest {
 
 	}
 	@Parameters({"browser"})
-	@BeforeMethod
+	@BeforeTest
 	public void testSetUP(String browser) throws MalformedURLException {
 
 		if (browser .equals("chrome")) {
@@ -47,6 +51,21 @@ public class BaseTest {
 			fo.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
 			driver = new RemoteWebDriver(new URL(Node), fo);
 		}
+	}
+	
+	public void ingresoNuevoUsuario()
+	{
+		
+		driver.findElement(By.xpath("//a[@id='tl_sign_up']")).sendKeys(OpeNewTab);
+		
+		//realiza cambio de pestaña
+		
+		java.util.Iterator<String> iter= driver.getWindowHandles().iterator();
+		String parent = iter.next();
+		String child = iter.next();
+		
+		driver.switchTo().window(child);
+		
 	}
 
 	public static void zip(String filepath) {
