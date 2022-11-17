@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="36952" started-at="2022-11-16T17:52:17 CLST" finished-at="2022-11-16T17:52:54 CLST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="36952" started-at="2022-11-16T17:52:17 CLST" finished-at="2022-11-16T17:52:54 CLST">
+      <class name="cl.local.test.LoginOKMantis">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:cl.local.test.LoginOKMantis@4f51b3e0]" name="setUp" is-config="true" duration-ms="14626" started-at="2022-11-16T17:52:17 CLST" finished-at="2022-11-16T17:52:32 CLST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginOK()[pri:1, instance:cl.local.test.LoginOKMantis@4f51b3e0]" name="loginOK" duration-ms="22296" started-at="2022-11-16T17:52:32 CLST" finished-at="2022-11-16T17:52:54 CLST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOK -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:cl.local.test.LoginOKMantis@4f51b3e0]" name="tearDown" is-config="true" duration-ms="38" started-at="2022-11-16T17:52:54 CLST" finished-at="2022-11-16T17:52:54 CLST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- cl.local.test.LoginOKMantis -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
