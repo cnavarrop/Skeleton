@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Master">
+	<suite-files>
+		<suite-file
+			path="./src/test/resources/runner/LoginTest.xml"></suite-file>
+		<suite-file
+			path="./src/test/resources/runner/IngresoIncidencia.xml"></suite-file>
+	</suite-files>
+</suite> <!-- Suite -->
