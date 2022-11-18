@@ -1,21 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36952" started-at="2022-11-16T17:52:17 CLST" finished-at="2022-11-16T17:52:54 CLST">
+  <suite name="Default suite" duration-ms="13052" started-at="2022-11-17T21:28:19 CLST" finished-at="2022-11-17T21:28:32 CLST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36952" started-at="2022-11-16T17:52:17 CLST" finished-at="2022-11-16T17:52:54 CLST">
+    <test name="Default test" duration-ms="13052" started-at="2022-11-17T21:28:19 CLST" finished-at="2022-11-17T21:28:32 CLST">
       <class name="cl.local.test.LoginOKMantis">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:cl.local.test.LoginOKMantis@4f51b3e0]" name="setUp" is-config="true" duration-ms="14626" started-at="2022-11-16T17:52:17 CLST" finished-at="2022-11-16T17:52:32 CLST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:cl.local.test.LoginOKMantis@2f490758]" name="setUp" is-config="true" duration-ms="12568" started-at="2022-11-17T21:28:19 CLST" finished-at="2022-11-17T21:28:32 CLST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginOK()[pri:1, instance:cl.local.test.LoginOKMantis@4f51b3e0]" name="loginOK" duration-ms="22296" started-at="2022-11-16T17:52:32 CLST" finished-at="2022-11-16T17:52:54 CLST">
+        <test-method status="SKIP" signature="loginOK(java.lang.String,java.lang.String)[pri:0, instance:cl.local.test.LoginOKMantis@2f490758]" name="loginOK" duration-ms="0" started-at="2022-11-17T21:28:32 CLST" data-provider="credenciales" finished-at="2022-11-17T21:28:32 CLST">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException
+at utils.ExcelUtilities.getCellData(ExcelUtilities.java:48)
+at utils.ExcelData.TestData(ExcelData.java:15)
+at cl.local.test.LoginOKMantis.getDatos(LoginOKMantis.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginOK -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:cl.local.test.LoginOKMantis@4f51b3e0]" name="tearDown" is-config="true" duration-ms="38" started-at="2022-11-16T17:52:54 CLST" finished-at="2022-11-16T17:52:54 CLST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:cl.local.test.LoginOKMantis@2f490758]" name="tearDown" is-config="true" duration-ms="185" started-at="2022-11-17T21:28:32 CLST" finished-at="2022-11-17T21:28:32 CLST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

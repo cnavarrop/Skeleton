@@ -48,8 +48,8 @@ public class Base {
 				.ignoring(NoSuchElementException.class);
 		return driver;
 	}
-
-	@BeforeClass
+    
+	@BeforeClass 
 	public void setUp() {
 		if (driver == null)
 			try {
