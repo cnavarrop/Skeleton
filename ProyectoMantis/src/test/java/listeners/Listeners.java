@@ -3,6 +3,7 @@ package listeners;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 
 public class Listeners implements ITestListener{
 	
@@ -17,7 +18,7 @@ public class Listeners implements ITestListener{
 	   * @see ITestResult#SUCCESS
 	   */
 	  public void onTestSuccess(ITestResult result) {
-	    // not implemented
+	    Reporter.log("Ejecución finalizada correctamente...");
 	  }
 
 	  /**
@@ -27,7 +28,7 @@ public class Listeners implements ITestListener{
 	   * @see ITestResult#FAILURE
 	   */
 	  public void onTestFailure(ITestResult result) {
-	    // not implemented
+		  Reporter.log("Ejecución finalizada con errores... "+result);
 	  }
 
 	  /**

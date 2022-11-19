@@ -2,6 +2,7 @@ package cl.local.test;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import cl.local.base.Base;
@@ -16,6 +17,7 @@ public class LoginFailMantis extends Base{
 		if (driver.findElement(By.xpath(prop.getProperty("alertLogin"))).isDisplayed()) {
 			Assert.fail(alert);
 		}
+		Reporter.log("Prueba Finalizada correctamente");
 		driver.close();
 
 	}

@@ -1,6 +1,6 @@
 package cl.local.test;
-
 import org.openqa.selenium.By;
+import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -21,6 +21,7 @@ public class LoginOKMantis extends Base {
 		LogInMantis(user, pass);
 		LogoutMantis();
 		log.debug("Prueba finalizada satisfactoriamente");
+		Reporter.log("Prueba finalizada satisfactoriamente");
 	}
 	
 	@DataProvider (name = "credenciales")

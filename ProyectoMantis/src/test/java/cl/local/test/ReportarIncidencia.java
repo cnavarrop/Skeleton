@@ -6,6 +6,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import cl.local.base.Base;
@@ -17,13 +18,17 @@ public class ReportarIncidencia extends Base{
 	@Test()
 	public void RepoIncidencia(){
 		
-		
+		try {
 		LogInMantis(prop.getProperty("user"), prop.getProperty("pass"));
 		driver.findElement(By.xpath(prop.getProperty("xpathReportarIncidencia"))).click();
 		selectDropDownList();
 		driver.findElement(By.xpath("//*[@id=\"summary\"]")).sendKeys(prop.getProperty("resumenIncidencia"));
 		driver.findElement(By.xpath("//*[@id=\"description\"]")).sendKeys(prop.getProperty("descripcionIncidencia"));
 		driver.findElement(By.xpath("//input[@value='Enviar incidencia']")).click();
+		
+		}catch(Throwable e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
