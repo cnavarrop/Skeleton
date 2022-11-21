@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="cl.local.test.LoginOKMantis">
+      <class name="cl.local.test.EliminarIncidencia">
         <methods>
+          <include name="eliminarIncidencia"/>
           <include name="tearDown"/>
-          <include name="loginOK" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- cl.local.test.LoginOKMantis -->
+      </class> <!-- cl.local.test.EliminarIncidencia -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
