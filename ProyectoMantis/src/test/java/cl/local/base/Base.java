@@ -77,6 +77,7 @@ public class Base {
 					e.printStackTrace();
 				}
 			} else if (prop.getProperty("navegador").equals("firefox")) {
+				
 				fo = new FirefoxOptions();
 
 				try {
