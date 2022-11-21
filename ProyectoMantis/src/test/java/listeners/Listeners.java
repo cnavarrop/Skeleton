@@ -1,5 +1,6 @@
 package listeners;
 
+import org.apache.commons.math3.analysis.function.Log;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -68,7 +69,7 @@ public class Listeners implements ITestListener{
 	   * @param context The test context
 	   */
 	  public void onStart(ITestContext context) {
-	    // not implemented
+	    Reporter.log("iniciando la prueba "+context.getName());
 	  }
 
 	  /**

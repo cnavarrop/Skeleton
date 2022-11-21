@@ -81,6 +81,7 @@ public class Base {
 
 				try {
 					driver = new RemoteWebDriver(new URL(prop.getProperty("urlNode")), fo);
+					log.debug("Inicialización de firefox");
 				} catch (MalformedURLException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
