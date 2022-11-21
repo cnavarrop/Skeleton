@@ -87,7 +87,8 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>src/test/resources/runner/Master.xml</suiteXmlFile>
 					</suiteXmlFiles>
-
+                   <fork>true</fork>
+            <executable>C:/Program Files/Java/jdk-19/bin/javac.exe</executable>
 				</configuration>
 			</plugin>
 		</plugins>
