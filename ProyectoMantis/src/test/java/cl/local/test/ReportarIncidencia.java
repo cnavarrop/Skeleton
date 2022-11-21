@@ -15,7 +15,7 @@ import cl.local.test.*;
 public class ReportarIncidencia extends Base{
 	
 	
-	@Test()
+	@Test
 	public void RepoIncidencia(){
 		
 		try {
