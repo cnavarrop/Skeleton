@@ -7,8 +7,6 @@
 </listeners>
 	<suite-files>
 		<suite-file
-			path="./src/test/resources/runner/LoginTest.xml"></suite-file>
-		<suite-file
 			path="./src/test/resources/runner/IngresoIncidencia.xml"></suite-file>
 	</suite-files>
 </suite> <!-- Suite -->
