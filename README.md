@@ -1,2 +1,2 @@
-# MantisTest
-Pruebas del aplicativo Mantis
+# RAD
+rad_EXPL
