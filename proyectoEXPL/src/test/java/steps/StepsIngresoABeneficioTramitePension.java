@@ -34,8 +34,8 @@ public class StepsIngresoABeneficioTramitePension {
 	
 	@Then("voy al menu Consultas tramite->Consulta retiro diez%")
 	public void voy_al_menu_consultas_tramite_consulta_retiro_diez() {
-//	   sistemaBackofficeBeneficiosActions.selectMenuConsultasTramite();
-//		sistemaBackofficeBeneficiosActions.ClickOnConsultaRetiro10();
+	   sistemaBackofficeBeneficiosActions.selectMenuConsultasTramite();
+		sistemaBackofficeBeneficiosActions.ClickOnConsultaRetiro10();
 	}
 
 }
