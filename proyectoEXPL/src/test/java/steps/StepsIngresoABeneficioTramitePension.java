@@ -1,6 +1,5 @@
 package steps;
 
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
