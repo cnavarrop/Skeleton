@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-07T22:18:46 CLST" name="Suite" finished-at="2023-01-07T22:18:50 CLST" duration-ms="4376">
+  <suite started-at="2023-01-08T15:07:14 CLST" name="Suite" finished-at="2023-01-08T15:07:25 CLST" duration-ms="10252">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@235834f2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-01-07T22:18:46 CLST" name="Test" finished-at="2023-01-07T22:18:50 CLST" duration-ms="4376">
+    <test started-at="2023-01-08T15:07:14 CLST" name="Test" finished-at="2023-01-08T15:07:25 CLST" duration-ms="10252">
       <class name="runner.RunCuke">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunCuke@235834f2]" started-at="2023-01-07T22:18:46 CLST" name="setUpClass" finished-at="2023-01-07T22:18:46 CLST" duration-ms="189" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunCuke@235834f2]" started-at="2023-01-08T15:07:14 CLST" name="setUpClass" finished-at="2023-01-08T15:07:15 CLST" duration-ms="191" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1305c126]]>
+                <![CDATA[org.testng.TestRunner@55d58825]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@235834f2]" started-at="2023-01-07T22:18:46 CLST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-07T22:18:50 CLST" duration-ms="4145" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@235834f2]" started-at="2023-01-08T15:07:15 CLST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-08T15:07:25 CLST" duration-ms="10016" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,21 +34,10 @@
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at steps.IngresarSolicitudCongelamiento.ingreso_al_menu_ncg264_tramites_por_congelar(IngresarSolicitudCongelamiento.java:23)
-at ✽.Ingreso al menu NCG264->tramites->por congelar(file:///D:/info/eclipse-workspace/proyectoEXPL/./src/test/resources/features/IngresarSolicitudCongelamientoDeSaldo.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunCuke@235834f2]" started-at="2023-01-07T22:18:50 CLST" name="tearDownClass" finished-at="2023-01-07T22:18:50 CLST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunCuke@235834f2]" started-at="2023-01-08T15:07:25 CLST" name="tearDownClass" finished-at="2023-01-08T15:07:25 CLST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
