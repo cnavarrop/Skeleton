@@ -5,10 +5,10 @@ import utils.SeleniumDriver;
 
 public class AfterActions {
 	
-//	@After
-//	public void TearDown() {
-//		
-//		SeleniumDriver.tearDown();
-//	}
+	@After
+	public void TearDown() {
+		
+		SeleniumDriver.tearDown();
+	}
 
 }
