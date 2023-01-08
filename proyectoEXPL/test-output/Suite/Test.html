@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jan 07 21:06:27 CLST 2023</td>
+<td>Started on:</td><td>Sat Jan 07 22:18:46 CLST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>25 seconds (25047 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4376 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,17 +67,24 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runner.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Busqueda de retiro 10%", "como usuario debo ingresar el rut de la persona,"</td>
-<td></td>
-<td>24</td>
+<td title='runner.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runner.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Se debe ingresar una nueva solicitud de congelamiento desde el RAD", "Ingreso de solicitud de congelamiento de saldo en RAD"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at steps.IngresarSolicitudCongelamiento.ingreso_al_menu_ncg264_tramites_por_congelar(IngresarSolicitudCongelamiento.java:23)
+	at ✽.Ingreso al menu NCG264-&gt;tramites-&gt;por congelar(file:///D:/info/eclipse-workspace/proyectoEXPL/./src/test/resources/features/IngresarSolicitudCongelamientoDeSaldo.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1713847712", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1713847712'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at steps.IngresarSolicitudCongelamiento.ingreso_al_menu_ncg264_tramites_por_congelar(IngresarSolicitudCongelamiento.java:23)
+	at ✽.Ingreso al menu NCG264-&gt;tramites-&gt;por congelar(file:///D:/info/eclipse-workspace/proyectoEXPL/./src/test/resources/features/IngresarSolicitudCongelamientoDeSaldo.feature:6)
+</pre></div></td>
+<td>4</td>
 <td>runner.RunCuke@235834f2</td></tr>
 </table><p>
 </body>

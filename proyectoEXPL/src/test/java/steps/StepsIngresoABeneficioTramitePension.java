@@ -17,6 +17,7 @@ public class StepsIngresoABeneficioTramitePension {
 	public void estando_logeado_en_el_sistema_rad() {
 		
 		SeleniumDriver.OpenPageRAD();
+		
 	  
 	}
 

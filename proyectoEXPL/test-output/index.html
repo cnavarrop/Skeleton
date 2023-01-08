@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;Busqueda de retiro 10%&quot;, &quot;como usuario debo ingresar el rut de la persona,&quot;)">runScenario("Busqueda de retiro 10%", "como usuario debo ingresar el rut de la persona,")</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;Se debe ingresar una nueva solicitud de congelamiento desde el RAD&quot;, &quot;Ingreso de solicitud de conge...)">runScenario("Se debe ingresar una nueva solicitud de congelamiento desde el RAD", "Ingreso de solicitud de conge...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,24 +119,29 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">runner.RunCuke</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Busqueda de retiro 10%&quot;, &quot;como usuario debo ingresar el rut de la persona,&quot;)">
-                  </a> <!-- runScenario("Busqueda de retiro 10%", "como usuario debo ingresar el rut de la persona,") -->
+                  <a name="runScenario(&quot;Se debe ingresar una nueva solicitud de congelamiento desde el RAD&quot;, &quot;Ingreso de solicitud de conge...)">
+                  </a> <!-- runScenario("Se debe ingresar una nueva solicitud de congelamiento desde el RAD", "Ingreso de solicitud de conge...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Busqueda de retiro 10%", "como usuario debo ingresar el rut de la persona,")</span>
+                  <span class="parameters">("Se debe ingresar una nueva solicitud de congelamiento desde el RAD", "Ingreso de solicitud de congelamiento de saldo en RAD")</span>
+                  <div class="stack-trace">io.cucumber.java.PendingException: TODO: implement me
+	at steps.IngresarSolicitudCongelamiento.ingreso_al_menu_ncg264_tramites_por_congelar(IngresarSolicitudCongelamiento.java:23)
+	at ✽.Ingreso al menu NCG264-&gt;tramites-&gt;por congelar(file:///D:/info/eclipse-workspace/proyectoEXPL/./src/test/resources/features/IngresarSolicitudCongelamientoDeSaldo.feature:6)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -201,12 +206,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.RunCuke')
-data.setCell(0, 3, 24836);
+data.setCell(0, 3, 4145);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -234,16 +239,18 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runner.RunCuke</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@1a96d94c)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@1305c126)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Busqueda de retiro 10%", "como usuario debo ingresar el rut de la persona,")</span>
-                <span class="method-start">176 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Se debe ingresar una nueva solicitud de congelamiento desde el RAD", "Ingreso de solicitud de conge...)</span>
+                <span class="method-start">195 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">25015 ms</span>
+                <span class="method-start">4343 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
