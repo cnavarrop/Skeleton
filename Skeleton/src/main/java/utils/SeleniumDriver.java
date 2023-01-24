@@ -26,6 +26,7 @@ public class SeleniumDriver {
 	private static Properties prop= new Properties();
 	private static SeleniumDriver seleniumDriver;
 	private static FluentWait<WebDriver> wait;
+	
 
 	public static void cargarArchivoProperty() {
 
