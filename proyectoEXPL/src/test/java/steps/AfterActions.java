@@ -9,6 +9,7 @@ public class AfterActions {
 	public void TearDown() {
 		
 		SeleniumDriver.tearDown();
+		
 	}
 
 }

@@ -5,6 +5,7 @@ import static org.testng.Assert.assertEquals;
 import java.util.List;
 
 import org.openqa.selenium.Alert;
+import org.testng.Assert;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -20,6 +21,7 @@ public class StepsBusquedaRetiro10 {
 	BusquedaRetiro10Actions busquedaRetiro10Actions = new BusquedaRetiro10Actions();
 	SistemaBackofficeBeneficiosActions sistemaBackofficeBeneficiosActions = new SistemaBackofficeBeneficiosActions();
 	AplicacionesRADActions aplicacionesRADActions = new AplicacionesRADActions();
+	
 	
 	
 	@Given("en la pantalla de retiro10")
@@ -47,6 +49,7 @@ public class StepsBusquedaRetiro10 {
 	@Then("se muestra en cuadro con los retiros realizados por el afiliado")
 	public void se_muestra_en_cuadro_con_los_retiros_realizados_por_el_afiliado() {
 		assertEquals(busquedaRetiro10Actions.validaGrilla(), true);
+		
 	}
-
+	
 }
