@@ -25,34 +25,6 @@ public class AplicacionesRADActions {
 		
 		
 	}
-	
-//	public void clickOnbtnBeneficioTramitedePension() {
-//		
-//		
-//	}
-//	public void clickOnbtnBeneficioTramitedePension() {
-//		
-//		
-//	}
-//	public void clickOnbtnBeneficioTramitedePension() {
-//		
-//		
-//	}
-//	public void clickOnbtnBeneficioTramitedePension() {
-//		
-//		
-//	}
-//	public void clickOnbtnBeneficioTramitedePension() {
-//		
-//		
-//	}
-//	public void clickOnbtnBeneficioTramitedePension() {
-//		
-//		
-//	}
-//
-//	public void clickOnbtnBeneficioTramitedePension() {
-//
-//	}
+
 
 }
