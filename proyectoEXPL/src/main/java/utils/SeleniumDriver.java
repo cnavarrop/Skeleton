@@ -55,8 +55,8 @@ public class SeleniumDriver {
 
 	public static void OpenPageRAD() {
 		driver.get("http://cer.rad.afphabitat.cl/frontrad/FRONTRAD_BASE_APP_LOGIN/");
-		driver.findElement(user).sendKeys("cnavarrp");
-		driver.findElement(pass).sendKeys("afphabitat.2021");
+		driver.findElement(user).sendKeys("%");
+		driver.findElement(pass).sendKeys("#");
 		driver.findElement(btnLogin).click();
 	}
 

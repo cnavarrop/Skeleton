@@ -69,8 +69,8 @@ public class SeleniumDriver {
 		}
 		
 		driver.manage().window().maximize();
-    	 wait = new FluentWait<WebDriver>(driver).
-    			withTimeout(Duration.ofSeconds(20)).
+		wait = new FluentWait<WebDriver>(driver).
+			    withTimeout(Duration.ofSeconds(20)).
     			pollingEvery(Duration.ofSeconds(3)).
     			ignoring(NoSuchElementException.class);
 	}
